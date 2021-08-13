@@ -5,6 +5,7 @@ Input in Terminal:
 javac Average.java
 java Average <Array of Numbers>
 */
+
 class Average
 {
     public static void main(String[] args) {
