@@ -78,9 +78,13 @@ public class Q1 {
         System.out.println("The No. of Registration Numbers: " + c_regno);
         System.out.println("The No. of CGPSs: " + c_cgpa);
         System.out.println("The No. of Names: " + c_name);
-        System.out.println("The Max Registration Number: " + max);
-        System.out.println("The Min Registration Number: " + min);
-        System.out.println("The Avg Cgpa: " + cgpa_sum / c_cgpa);
+        if (c_regno != 0) {
+            System.out.println("The Max Registration Number: " + max);
+            System.out.println("The Min Registration Number: " + min);
+        }
+        if (c_cgpa != 0) {
+            System.out.println("The Avg Cgpa: " + cgpa_sum / c_cgpa);
+        }
         System.out.println("The Names: " + names);
 
         sc.close();
