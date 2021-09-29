@@ -25,23 +25,25 @@ Sample Input II:
 
 import java.util.Scanner;
 
-class Pattern {
+public class Q3_B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n;
-        System.out.println("Enter the no. of rows");
+        System.out.println("Enter the No. of Rows");
         n = sc.nextInt();
 
-        int k = 2 * n - 1;
+        // No. of rows 
+        // No. of Spaces in the pattern
+        
         for (int i = 0; i < n - 1; i++) {
-            for (int spaces = 0; spaces < n - i - 1; spaces++) {
-                System.out.print("\t");
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
             }
 
             System.out.print("1");
 
-            for (int spaces = 0; spaces < 2 * i; spaces++) {
-                System.out.print("\t");
+            for (int j = 0; j < 2 * i; j++) {
+                System.out.print(" ");
             }
 
             if (i > 0) {
@@ -52,14 +54,14 @@ class Pattern {
         }
 
         for (int i = n - 1; i >= 0; i--) {
-            for (int spaces = 0; spaces < n - i - 1; spaces++) {
-                System.out.print("\t");
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
             }
 
             System.out.print("1");
 
-            for (int spaces = 0; spaces < 2 * i; spaces++) {
-                System.out.print("\t");
+            for (int j = 0; j < 2 * i; j++) {
+                System.out.print(" ");
             }
 
             if (i > 0) {

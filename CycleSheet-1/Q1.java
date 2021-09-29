@@ -70,6 +70,8 @@ public class Q1 {
             }
         }
 
+        sc.close();
+
         if (names.endsWith(", ")) {
             names = names.substring(0, names.length() - 2);
         }
@@ -86,7 +88,5 @@ public class Q1 {
             System.out.println("The Avg Cgpa: " + cgpa_sum / c_cgpa);
         }
         System.out.println("The Names: " + names);
-
-        sc.close();
     }
 }

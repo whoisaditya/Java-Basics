@@ -1,7 +1,10 @@
 {
     "java.project.sourcePaths": [
-        "Practice_Qs",
+        "Practice-Qs/Level-3",
+        "Practice-Qs/Level-2",
+        "CycleSheet-1",
+        "CAT-1",
         "Assignment-1",
-        "Practice-Qs/Level-2"
+        ""
     ]
 }
