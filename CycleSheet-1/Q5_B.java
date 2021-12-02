@@ -11,6 +11,7 @@ PROGRAM
 
 // Aditya Mitra
 // 20BCE2044
+
 import java.util.Scanner;
 
 public class Q5_B {

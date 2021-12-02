@@ -1,0 +1,10 @@
+20BCE2001, Math, 9, Chemistry, 85, Stats, 90
+20BCE2002, Stats, 80, English, 70
+20BCE2003, Math, 89, Chemistry, 85, Stats, 90
+20BCE2004, Stats, 70, English, 70
+20BCE2005, Math, 79, Chemistry, 85, Stats, 90
+20BCE2006, Stats, 40, English, 70
+20BCE2007, Math, 69, Chemistry, 85, Stats, 90
+20BCE2008, Stats, 30, English, 70
+20BCE2009, Math, 59, Chemistry, 85, Stats, 90
+20BCE2010, Stats, 20, English, 70

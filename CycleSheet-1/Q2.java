@@ -34,7 +34,8 @@ public class Q2 {
             i++;
             int amt = Integer.parseInt(args[i]);
 
-            if(amt < 0){
+            if(amt < 0)
+            {
                 amt = -amt;
                 if(amt > 25000){
                     System.out.println("Failed Transaction");
