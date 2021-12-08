@@ -1,11 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "Lab-Fat",
         "Lab-Cat-2",
         "CycleSheet-2/AS_Files",
         "CycleSheet-2",
         "CycleSheet-1",
         "CAT-1",
         "Assignment-1",
-        "Java-On-Spot/Practice Application/application"
+        "Lab_Fat"
     ]
 }
