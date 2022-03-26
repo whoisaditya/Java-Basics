@@ -16,6 +16,7 @@ public class Q16 {
                         line = line.replace("?", "");
 
                         String sent_str = line.substring(0, line.indexOf("("));
+
                         String key_str = line.substring(line.indexOf("(") + 1, line.indexOf(")"));
 
                         sent_str = sent_str.trim().toLowerCase();
@@ -46,6 +47,7 @@ public class Q16 {
                 String words[] = input_sent.split(" ");
                 String map_seq[][] = new String[words.length][];
 
+                // Creating a 2d ragged array
                 for (int i = 0; i < words.length; i++) {
                         ArrayList<String> p_o_s = new ArrayList<>();
                         Set<String> keySet = map.keySet();
@@ -88,6 +90,7 @@ public class Q16 {
                                 }
                         }
                         if (flag == false) {
+                                // We print this if the word entered by the user has nver been used in the way it was supposed to be used.
                                 System.out.println("Unacceptable");
                                 break;
                         }

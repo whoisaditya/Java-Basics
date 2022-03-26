@@ -21,11 +21,12 @@ class Captcha {
     void generateRandom(int[] used) {
         int random_number = (int) (Math.random() * 26);
 
-        
+        // Check if the random number is already used
         while (check_used(used, random_number)) {
             random_number = (int) (Math.random() * 26);
         }
 
+        // Assign the random number to the instance variable
         associated_value = random_number;
     }
 
@@ -80,6 +81,7 @@ public class Question1 {
         System.out.println("Question 1");
         System.out.println();
         System.out.println("The 3 Captchas are as follows: ");
+        
         // Generate captcha for three values
         for (i = 0; i < 3; i++) {
             System.out.println("Captcha " + i + " :" + arr[i].generateCaptcha(arr));

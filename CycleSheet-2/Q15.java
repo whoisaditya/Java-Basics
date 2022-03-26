@@ -1,7 +1,7 @@
 import java.util.*;
 
 class NotPrimeNoException extends Exception 
-{
+{ 
     NotPrimeNoException(String err) 
     {
         super(err);
@@ -12,6 +12,7 @@ class NotTwinPrimeNoException extends Exception
 {
     NotTwinPrimeNoException(String err) 
     {
+        // calls super class constructor
         super(err);
     }
 }

@@ -26,8 +26,12 @@ class Class8421 extends Conversion.ConversionClass {
     public String number;
 
     String GetCode8421(String n) {
+
+        // Create a 2D array of 10 rows and 2 columns to store the decimal values
         String[][] t = createArr();
         String code8421Number = "";
+
+        // Convert the number to 8421
         for (int p = 0; p < n.length(); p++) {
             for (int i = 0; i < 10; i++) {
                 if (t[i][1].equals(n.charAt(p) + "")) {
@@ -46,6 +50,7 @@ class Class8421 extends Conversion.ConversionClass {
     }
 }
 
+// Finds the 9's complement of a number
 class Complement9 extends Class8421 {
     public String complement9 = "";
     public String dec_comp_9 = "";
@@ -53,25 +58,29 @@ class Complement9 extends Class8421 {
     void find() {
         for (int i = 0; i < number.length(); i++) {
             switch (number.charAt(i)) {
-            case '1': {
-                complement9 += "0";
-                break;
-            }
-            case '0': {
-                complement9 += "1";
-                break;
-            }
-            case ' ': {
-                complement9 += " ";
-                continue;
-            }
+                case '1': {
+                    complement9 += "0";
+                    break;
+                }
+                case '0': {
+                    complement9 += "1";
+                    break;
+                }
+                case ' ': {
+                    complement9 += " ";
+                    continue;
+                }
             }
         }
     }
 
+    // Decimal equivalent of complement of 9
     void findDec_comp_9() {
         String[] split_comp_9 = complement9.split(" ");
+
+        // Create a 2D array of 10 rows and 2 columns to store the decimal values
         String[][] t = createArr();
+
         for (int p = 0; p < split_comp_9.length; p++) {
             for (int i = 0; i < 10; i++) {
                 if (t[i][0].equals(split_comp_9[p])) {
@@ -107,7 +116,7 @@ class Q9 {
         System.out.println(obj1.complement9);
         System.out.println();
 
-        System.out.println("Decimal eqivalent of9's complement: ");
+        System.out.println("Decimal eqivalent of 9's complement: ");
         obj1.findDec_comp_9();
         System.out.println(obj1.dec_comp_9);
     }
